@@ -1,7 +1,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
 
     <TextView
         android:layout_width="wrap_content"
@@ -9,35 +10,35 @@
         android:text="Segunda Avaliação - Desenvolvimento de Aplicações para Dispositivos Móveis"
         android:textAlignment="center"
         tools:context=".MainActivity"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="154dp" />
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="53dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Adicionar Cliente"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="260dp" />
+        tools:layout_editor_absoluteX="287dp"
+        tools:layout_editor_absoluteY="117dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Adicionar Produto"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="325dp" />
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="181dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Realizar Venda"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="392dp" />
+        tools:layout_editor_absoluteX="287dp"
+        tools:layout_editor_absoluteY="248dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Realizado por: João Vitor e Wellington Junior"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="655dp" />
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="352dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
