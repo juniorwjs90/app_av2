@@ -4,7 +4,7 @@ public class Cliente {
     String nomeCliente;
     String nomeClienteResponsavel;
     String telefoneClienteResponsavel;
-    Double creditoInicialCliente;
+    String creditoInicialCliente;
 
     public String getNomeCliente() {
         return nomeCliente;
@@ -30,11 +30,11 @@ public class Cliente {
         this.telefoneClienteResponsavel = telefoneClienteResponsavel;
     }
 
-    public Double getCreditoInicialCliente() {
+    public String getCreditoInicialCliente() {
         return creditoInicialCliente;
     }
 
-    public void setCreditoInicialCliente(Double creditoInicialCliente) {
+    public void setCreditoInicialCliente(String creditoInicialCliente) {
         this.creditoInicialCliente = creditoInicialCliente;
     }
 }

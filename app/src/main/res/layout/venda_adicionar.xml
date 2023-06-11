@@ -12,7 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
         android:padding="4px"
         android:text="Nova Venda"
@@ -21,24 +20,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <AutoCompleteTextView
-        android:id="@+id/txtNomeComprador"
+        android:id="@+id/nomeCliente"
         android:layout_width="0dp"
         android:layout_height="46dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:hint="@string/nameHint"
+        android:hint="Nome do cliente"
         android:maxLength="60"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="131dp"
         android:layout_height="42dp"
         android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
         android:layout_marginTop="16dp"
         android:gravity="center_vertical|end"
         android:text="@string/name"
@@ -51,10 +50,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/bg"
         android:padding="10dp"
@@ -213,10 +210,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         app:layout_constraintEnd_toStartOf="@+id/scrollViewListaCompras"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNomeComprador">
@@ -243,7 +238,7 @@
             app:layout_gravity="right|center_vertical"
             app:layout_row="2" />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_column="1"
@@ -309,7 +304,6 @@
         android:layout_width="@dimen/btnDefaultSize"
         android:layout_height="@dimen/btnDefaultSize"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:onClick="adicionarNovoProduto"
         android:src="@drawable/adicionar_produto_y"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
@@ -321,9 +315,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:text="@string/nameHelp"
         app:layout_constraintEnd_toEndOf="@+id/txtNomeComprador"
         app:layout_constraintStart_toStartOf="@+id/textView"
@@ -334,7 +326,6 @@
         android:layout_width="@dimen/btnDefaultSize"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:onClick="finalizarVenda"
         android:src="@drawable/finalizar_venda"
         app:layout_constraintBottom_toBottomOf="@+id/imgVendaCredito"
@@ -347,7 +338,6 @@
         android:layout_width="@dimen/btnDefaultSize"
         android:layout_height="@dimen/btnDefaultSize"
         android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
         android:layout_marginBottom="24dp"
         android:onClick="voltarAoMenu"
         android:src="@drawable/voltar"
@@ -373,7 +363,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
         android:layout_marginBottom="24dp"
         android:background="#461AFF00"
         android:gravity="right|center_vertical"
@@ -388,7 +377,6 @@
         android:layout_width="@dimen/btnDefaultSize"
         android:layout_height="@dimen/btnDefaultSize"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:onClick="finalizarVendaComCredito"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintStart_toEndOf="@+id/imageView3"

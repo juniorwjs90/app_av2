@@ -2,7 +2,7 @@ package com.example.app_av2;
 
 public class Produto {
     String nomeProduto;
-    float valorProduto;
+    String valorProduto;
 
     public String getNomeProduto() {
         return nomeProduto;
@@ -12,11 +12,11 @@ public class Produto {
         this.nomeProduto = nomeProduto;
     }
 
-    public float getValorProduto() {
+    public String getValorProduto() {
         return valorProduto;
     }
 
-    public void setValorProduto(float valorProduto) {
+    public void setValorProduto(String valorProduto) {
         this.valorProduto = valorProduto;
     }
 }
