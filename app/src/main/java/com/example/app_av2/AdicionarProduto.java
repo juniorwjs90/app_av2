@@ -20,9 +20,17 @@ public class AdicionarProduto extends Activity {
     }
 
     public void adicionarNovoProduto(View view) {
+        this.db = ConectarDB.SharedInstance(this);
+
+        innomeProduto = (EditText) findViewById(R.id.entNomeProduto);
+        invalorProduto = (EditText) findViewById(R.id.entPrice);
+
+
         Produto produto = new Produto();
 
         produto.setNomeProduto(innomeProduto.getText().toString());
         produto.setValorProduto(Double.parseDouble(invalorProduto.getText().toString()));
+
+        long aux = db.insetProduto(produto);
     }
 }
